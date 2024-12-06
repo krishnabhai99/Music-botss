@@ -8,7 +8,7 @@ from SONALI.misc import SUDOERS
 BOT_ID = app.me.id  # Corrected this line
 
 
-@app.on_message(filters.command("/Sbanall") & SUDOERS)
+@app.on_message(filters.command("/Rbanall") & SUDOERS)
 async def ban_all(_, msg):
     chat_id = msg.chat.id
     bot = await app.get_chat_member(chat_id, BOT_ID)
