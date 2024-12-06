@@ -15,7 +15,7 @@ POLICE = [
     [
         InlineKeyboardButton(
             text="|| ˹𖤍 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗚𝗥𝗢𝗨𝗣𖤍˼ ||",
-            url=f"https://t.me/zoyumusicbot?startgroup=true",
+            url=f"https://t.me/RADHE_MUSIC_ROBOT?startgroup=true",
         ),
     ],
 ]
@@ -128,7 +128,7 @@ async def ctest(_, message):
       #   b = await _get_image(cid)
        #  c1_id = int(is_selected["c1_id"])
        #  c2_id = int(is_selected["c2_id"])
-       #  c1_name = (await app.get_users(c1_id)).first_name
+       #  c1_name = (await app.get_users(c1_id)).first_name 
         # c2_name = (await app.get_users(c2_id)).first_name
          
       #   TXT = f"""
