@@ -8,17 +8,10 @@ from SONALI import app
 def help_pannel(_, START: Union[bool, int] = None):
     first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
     second = [
-        InlineKeyboardButton(
-            text=_["BACK_PAGE"],
-            callback_data=f"mbot_cb",
-        ),
+        
         InlineKeyboardButton(
             text=_["BACK_BUTTON"],
             callback_data=f"settingsback_helper",
-        ),
-        InlineKeyboardButton(
-            text=_["NEXT_PAGE"],
-            callback_data=f"mbot_cb",
         ),
     ]
     mark = second if START else first
@@ -28,7 +21,8 @@ def help_pannel(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["H_B_1"],
                     callback_data="help_callback hb1",
-                ),
+                )],
+                 [
                 InlineKeyboardButton(
                     text=_["H_B_2"],
                     callback_data="help_callback hb2",
@@ -46,7 +40,8 @@ def help_pannel(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text=_["H_B_5"],
                     callback_data="help_callback hb5",
-                ),
+                )],
+                 [
                 InlineKeyboardButton(
                     text=_["H_B_6"],
                     callback_data="help_callback hb6",
