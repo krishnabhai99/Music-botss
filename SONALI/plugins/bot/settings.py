@@ -91,13 +91,32 @@ async def gib_repo(client, CallbackQuery, _):
                 url=f"https://t.me/{app.username}?startgroup=true",
             )],
 
-[InlineKeyboardButton(text="• ʙᴧsɪᴄ ɢᴜɪᴅᴇ •", callback_data=f"settings_back_helper"),
+[InlineKeyboardButton(text="• ʙᴧsɪᴄ ɢᴜɪᴅᴇ •", callback_data=f"basict"),
 InlineKeyboardButton(text="• ᴛᴏᴏʟs •", callback_data=f"mbot_cb")],
 
 [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
              ],   
      ),
     )
+
+#ya basic guide hai #
+
+@app.on_callback_query(filters.regex("basict") & ~BANNED_USERS)
+@languageCB
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+        InputMediaVideo(
+            "https://envs.sh/RYX.mp4", 
+            caption= f"**Wᴇʟᴄᴏᴍᴇ ᴛᴏ {app.mention}**\n\n**Exᴘʟᴏʀᴇ ᴀ ᴡɪᴅᴇ ʀᴀɴɢᴇ ᴏғ ғᴇᴀᴛᴜʀᴇs ᴇɴʜᴀɴᴄᴇ ʏᴏᴜʀ ᴍᴜsɪᴄ ᴇxᴘᴇʀɪᴇɴᴄᴇ.**\n\n**Tᴀᴘ ᴛᴏ ɪɴᴠɪᴛᴇ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ᴏᴡɴ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ**\n\n < ᴧʙᴏᴜᴛ >"
+        ),
+        reply_markup=InlineKeyboardMarkup(
+            [
+
+[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
+             ],   
+     ),
+    )
+
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
