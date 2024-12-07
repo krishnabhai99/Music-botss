@@ -49,6 +49,7 @@ async def settings_mar(client, message: Message, _):
         _["setting_1"].format(app.mention, message.chat.id, message.chat.title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
+#ya main callback hai#
 
 @app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
 @languageCB
@@ -72,13 +73,16 @@ InlineKeyboardButton(text="• ᴛᴏᴏʟs •", callback_data=f"mbot_cb")],
              ],   
      ),
     )
+
+#ya about wla hai#
+
 @app.on_callback_query(filters.regex("gibt_source") & ~BANNED_USERS)
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
         InputMediaVideo(
             "https://envs.sh/RYX.mp4", 
-            caption= f"**Wᴇʟᴄᴏᴍᴇ ᴛᴏ {app.mention}**\n\n**Exᴘʟᴏʀᴇ ᴀ ᴡɪᴅᴇ ʀᴀɴɢᴇ ᴏғ ғᴇᴀᴛᴜʀᴇs ᴇɴʜᴀɴᴄᴇ ʏᴏᴜʀ ᴍᴜsɪᴄ ᴇxᴘᴇʀɪᴇɴᴄᴇ.**\n\n**Tᴀᴘ ᴛᴏ ɪɴᴠɪᴛᴇ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ᴏᴡɴ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ**"
+            caption= f"❖ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ ʀɪsʜᴜ-ᴍᴜsɪᴄ ʙᴏᴛ\n\n➻ [ʀɪsʜᴜ-ᴍᴜsɪᴄ](https://t.me/{app.username})  ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ\n\n๏ ᴡʜʏ [˹ ʀɪsʜᴜ ᴍᴜsɪᴄ ˼](https://t.me/UR_RISHU_143) ɪs ʙᴇsᴛ ?\n\n⦿━━━━━━━━━━━━━━━━━━━━━⦿\n➻ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ\n➻ ᴍᴜsɪᴄ ʙᴏᴛ ғᴇᴀᴛᴜʀᴇs\n➻ ɴᴏ ʏᴛ ɪᴘ ʙʟᴏᴄᴋ ɪssᴜᴇ\n➻ ɴᴏ ᴘꝛᴏᴍᴏᴛɪᴏɴᴧʟ ᴧᴅs \n➻ ꝛᴇ-ᴇᴅɪᴛᴇᴅ ᴄᴏꝛᴇ | ʜɪɢʜʟʏ ᴏᴘᴛɪᴍɪsᴇ\n➻ ɴᴏ ʟᴧɢ ᴀɴᴅ ᴅᴏᴡɴ-ᴛɪᴍᴇ\n➻ ᴍᴀɴʏ ᴍᴏʀᴇ ғᴇᴀᴛᴜʀᴇs........\n⦿━━━━━━━━━━━━━━━━━━━━━⦿\n\nᴀʟʟ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴀʀᴇ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ\n\n❖ [Jᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/UR_RISHU_143) |×| [ɢʀᴏᴜᴘ](https://t.me/UR_support07)"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
