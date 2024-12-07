@@ -27,7 +27,7 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
     )
 
 
-@app.on_callback_query(filters.regex("settings_back_helper"))
+@app.on_callback_query(filters.regex("settings_back_helperr"))
 async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
