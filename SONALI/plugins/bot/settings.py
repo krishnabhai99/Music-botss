@@ -59,8 +59,8 @@ async def gib_repo(client, CallbackQuery, _):
             caption="Here's the source video you requested!"
         ),
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")]]
-        ),
+            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")]]           [[InlineKeyboardButton(text="• ᴍᴜsɪᴄ •", callback_data=f"settings_back_helper")]]   
+     ),
     )
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
