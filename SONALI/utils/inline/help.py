@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from SONALI import app
 
-@app.on_callback_query(filters.regex("developer"))
+
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
