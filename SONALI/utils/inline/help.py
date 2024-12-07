@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from SONALI import app
 
 
-async def about_callback(client: Client, callback_query: CallbackQuery):
+
     buttons = [
         [
             InlineKeyboardButton(text="ᴏᴡɴᴇʀ", user_id=config.OWNER_ID[0]),
