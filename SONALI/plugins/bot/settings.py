@@ -60,11 +60,15 @@ async def gib_repo(client, CallbackQuery, _):
         ),
         reply_markup=InlineKeyboardMarkup(
             [
-[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")],
+[InlineKeyboardButton(
+                text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ ❖",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )],
 
-[InlineKeyboardButton(text="• ᴍᴜsɪᴄ •", callback_data=f"settings_back_helper")],
+[InlineKeyboardButton(text="• ᴍᴜsɪᴄ •", callback_data=f"settings_back_helper"),
+InlineKeyboardButton(text="• ᴍᴀɴᴇɢᴇᴍᴇɴᴛ •", callback_data=f"mbot_cb")],
 
-[InlineKeyboardButton(text="• ᴍᴀɴᴇɢᴇᴍᴇɴᴛ •", callback_data=f"mbot_cb")]
+[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
              ],   
      ),
     )
