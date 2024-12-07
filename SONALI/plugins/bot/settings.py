@@ -57,7 +57,7 @@ async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
         InputMediaVideo(
             "https://envs.sh/RYX.mp4", 
-            caption= f"**Wᴇʟᴄᴏᴍᴇ ᴛᴏ {app.mention}**\n\n**Exᴘʟᴏʀᴇ ᴀ ᴡɪᴅᴇ ʀᴀɴɢᴇ ᴏғ ғᴇᴀᴛᴜʀᴇs ᴇɴʜᴀɴᴄᴇ ʏᴏᴜʀ ᴍᴜsɪᴄ ᴇxᴘᴇʀɪᴇɴᴄᴇ.**\n\n**Tᴀᴘ ᴛᴏ ɪɴᴠɪᴛᴇ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ᴏᴡɴ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ**\n\n<code>Monospace Text</code>"
+            caption= f"**Wᴇʟᴄᴏᴍᴇ ᴛᴏ {app.mention}**\n\n**Exᴘʟᴏʀᴇ ᴀ ᴡɪᴅᴇ ʀᴀɴɢᴇ ᴏғ ғᴇᴀᴛᴜʀᴇs ᴇɴʜᴀɴᴄᴇ ʏᴏᴜʀ ᴍᴜsɪᴄ ᴇxᴘᴇʀɪᴇɴᴄᴇ.**\n\n**Tᴀᴘ ᴛᴏ ɪɴᴠɪᴛᴇ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ᴏᴡɴ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ**"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
@@ -92,7 +92,7 @@ async def gib_repo(client, CallbackQuery, _):
             )],
 
 [InlineKeyboardButton(text="• ʙᴧsɪᴄ ɢᴜɪᴅᴇ •", callback_data=f"basict"),
-InlineKeyboardButton(text="• ᴛᴏᴏʟs •", callback_data=f"mbot_cb")],
+InlineKeyboardButton(text="• ᴅᴏɴᴀᴛᴇ •", callback_data=f"doniiyyf")],
 
 [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
              ],   
@@ -108,6 +108,24 @@ async def gib_repo(client, CallbackQuery, _):
         InputMediaVideo(
             "https://envs.sh/Rke.mp4", 
             caption= f"**❖ ʜᴇʏ ᴅᴇᴀʀ ᴛʜɪs ɪs ᴀ ǫᴜɪᴄᴋ ᴀɴᴅ sɪᴍᴘʟᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴜsɪɴɢ [ʀɪsʜᴜ-ᴍᴜsɪᴄ](https://t.me/UR_RISHU_143)\n\n1) ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ' ʙᴜᴛᴛᴏɴ\n2) sᴇʟᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴀᴍᴇ\n3) ɢʀᴀɴᴛ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ɴᴇᴄᴇssᴀʀʏ ᴘᴇʀᴍɪssɪᴏɴs ғᴏʀ sᴍᴏᴏᴛʜ ᴀɴᴅ ғᴜʟʟ ғᴜɴᴄᴛɪᴏɴᴀʟɪᴛʏ\n\nᴛᴏ ᴀᴄᴄᴇss ᴄᴏᴍᴍᴀɴᴅs, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴍᴜsɪᴄ ᴘʀᴇғᴇʀᴇɴᴄᴇs ɪғ ʏᴏᴜ sᴛɪʟʟ ғᴀᴄᴇ ᴀɴʏ ɪssᴜᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ ʀᴇᴀᴄʜ ᴏᴜᴛ ғᴏʀ sᴜᴘᴘᴏʀᴛ**"
+        ),
+        reply_markup=InlineKeyboardMarkup(
+            [
+
+[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"gibt_source")],
+             ],   
+     ),
+    )
+
+#donate wala #
+
+@app.on_callback_query(filters.regex("doniiyyf") & ~BANNED_USERS)
+@languageCB
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+        InputMediaVideo(
+            "https://envs.sh/Rke.mp4", 
+            caption= f"**❖ ʜᴇʏ, ɪ ᴀᴍ ɢʟᴀᴅ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ɪɴ ᴅᴏɴᴀᴛɪɴɢ ᴜs ᴛʜᴀᴛ ᴍᴇᴀɴ ᴀ ʟᴏᴛ :)\n\nᴡᴇ ᴘʀᴏᴠɪᴅᴇ 24×7 ᴍᴜsɪᴄ sᴇʀᴠɪᴄᴇ sᴏ ᴡᴇ ᴀʟsᴏ ɴᴇᴇᴅ sᴏᴍᴇ ʜᴇʟᴘ ғᴏʀ ɪᴛ, ᴅᴏɴᴀᴛᴇ ɴᴏᴡ ᴠɪᴀ :-\n\n• ᴜᴘɪ ɪᴅ » <code>rishabhxdev@fam</code> \n• ǫʀ ᴄᴏᴅᴇ » [ᴛᴀᴘ ᴛᴏ sᴇᴇ ǫʀ ᴄᴏᴅᴇ](https://t.me/RishuQR/8) \n• ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ʙʏ ᴄᴏɴᴛᴀᴄᴛɪɴɢ [ᴅᴇᴠᴇʟᴏᴘᴇʀ 🚩](https://t.me/Rishu1286)\n\nʏᴏᴜʀ sᴍᴀʟʟ ᴀᴍᴏᴜɴᴛ ᴄᴀɴ ʜᴇʟᴘ ᴜs ᴀɴᴅ ʀɪsʜᴜ ᴛᴏ ɢʀᴏᴡ ᴍᴏʀᴇ**"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
