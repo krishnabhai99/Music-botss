@@ -1,6 +1,8 @@
 from typing import Union
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton,
+InlineKeyboardMarkup,
+CallbackQuery
 
 from SONALI import app
 
