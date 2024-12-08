@@ -64,7 +64,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="• ᴧᴅᴅ мᴇ ʙᴧʙʏ •",
-                url=f"https://t.me/{app.username}?startgroup=true",)
+                url=f"https://t.me/Vip_music_vc_bot?startgroup=true",)
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
@@ -98,7 +98,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text="• ᴧᴅᴅ мᴇ ʙᴧʙʏ •",
-                url=f"https://t.me/{app.username}?startgroup=true",)
+                url=f"https://t.me/Vip_music_vc_bot?startgroup=true",)
         ],
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
