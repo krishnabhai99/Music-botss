@@ -15,7 +15,6 @@ import config
 from config import BANNED_USERS, START_IMG_URL
 from strings import get_string
 from SONALI.misc import SUDOERS, _boot_
-from SONALI.plugins.play.playlist import del_plist_msg
 from SONALI.plugins.sudo.sudoers import sudoers_list
 from SONALI.utils.database import (
     add_served_chat,
