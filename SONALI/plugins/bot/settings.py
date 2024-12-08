@@ -69,7 +69,7 @@ async def gib_repo(client, CallbackQuery, _):
 [InlineKeyboardButton(text="• ᴍᴜsɪᴄ •", callback_data=f"settings_back_helper"),
 InlineKeyboardButton(text="• ᴛᴏᴏʟs •", callback_data=f"mbot_cb")],
 
-[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
+[InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"settingsback_helper")],
              ],   
      ),
     )
@@ -94,7 +94,7 @@ async def gib_repo(client, CallbackQuery, _):
 [InlineKeyboardButton(text="• ʙᴧsɪᴄ ɢᴜɪᴅᴇ •", callback_data=f"basict"),
 InlineKeyboardButton(text="• ᴅᴏɴᴀᴛᴇ •", callback_data=f"doniiyyf")],
 [InlineKeyboardButton(text="• sᴜʙsᴄʀɪʙᴇ •", callback_data=f"subplanh")],
-[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
+[InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"settingsback_helper")],
              ],   
      ),
     )
@@ -112,7 +112,7 @@ async def gib_repo(client, CallbackQuery, _):
         reply_markup=InlineKeyboardMarkup(
             [
 
-[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"gibt_source")],
+[InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"gibt_source")],
              ],   
      ),
     )
@@ -130,7 +130,7 @@ async def gib_repo(client, CallbackQuery, _):
         reply_markup=InlineKeyboardMarkup(
             [
 
-[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"gibt_source")],
+[InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"gibt_source")],
              ],   
      ),
     )
@@ -148,7 +148,7 @@ async def gib_repo(client, CallbackQuery, _):
         reply_markup=InlineKeyboardMarkup(
             [
 
-[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"gibt_source")],
+[InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"gibt_source")],
              ],   
      ),
     )
