@@ -8,6 +8,6 @@ class BUTTONS(object):
     [InlineKeyboardButton("Aᴄᴛɪᴏɴ", callback_data="mplus HELP_Action"),InlineKeyboardButton("Sᴇᴀʀᴄʜ", callback_data="mplus HELP_Search")],    
     [InlineKeyboardButton("ғᴏɴᴛ", callback_data="mplus HELP_Font"),
     InlineKeyboardButton("ᴄᴏᴜᴘʟᴇs", callback_data="mplus HELP_Couples"),InlineKeyboardButton("Ⓣ-ɢʀᴀᴘʜ", callback_data="mplus HELP_TG")],          
-    [InlineKeyboardButton("• ʙᴀᴄᴋ • ", callback_data=f"settingsback_helper"), 
+    [InlineKeyboardButton("• ʙᴀᴄᴋ • ", callback_data=f"gib_source"), 
     ]
 ]
