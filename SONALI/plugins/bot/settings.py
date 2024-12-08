@@ -93,7 +93,7 @@ async def gib_repo(client, CallbackQuery, _):
 
 [InlineKeyboardButton(text="• ʙᴧsɪᴄ ɢᴜɪᴅᴇ •", callback_data=f"basict"),
 InlineKeyboardButton(text="• ᴅᴏɴᴀᴛᴇ •", callback_data=f"doniiyyf")],
-[InlineKeyboardButton(text="• sᴜʙsᴄʀɪʙᴇ •", callback_data=f"subplanh"),
+[InlineKeyboardButton(text="• sᴜʙsᴄʀɪʙᴇ •", callback_data=f"subplanh")],
 [InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"settingsback_helper")],
              ],   
      ),
@@ -143,7 +143,7 @@ async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
         InputMediaVideo(
             "https://envs.sh/Rke.mp4", 
-            caption= f"**⌬ ๏ Bᴇɴɪғɪᴛ ᴏғ sᴜʙsᴄʀɪᴘᴛɪᴏɴ\n\n⌬ Yᴏᴜ ᴄᴀɴ ғʀᴇᴇ ᴘʀᴏᴍᴏᴛɪᴏɴ ᴏғ ʀɪsʜᴜ-ᴍᴜsɪᴄ Aʟʟ\n\n\n𝗢𝗡𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗨𝗦𝗘𝗥 [𝗖𝗠𝗗]\n\n\n⤿ [/broadcast -user -pin -pinloud -nobot -assistant] - Tᴏ ᴘʀᴏᴍᴏᴛɪᴏɴ ʟɪᴋᴇ\n\n⤿ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴀᴅᴠᴀɴᴄᴇ ᴀɪ ᴛᴏᴏʟ**"
+            caption= f"**⌬ ๏ Bᴇɴɪғɪᴛ ᴏғ sᴜʙsᴄʀɪᴘᴛɪᴏɴ\n\n⌬ Yᴏᴜ ᴄᴀɴ ғʀᴇᴇ ᴘʀᴏᴍᴏᴛɪᴏɴ ᴏғ ʀɪsʜᴜ-ᴍᴜsɪᴄ Aʟʟ\n\n\n𝗢𝗡𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗨𝗦𝗘𝗥 [𝗖𝗠𝗗]\n\n\n⤿ [/broadcast -user -pin -pinloud -nobot -assistant] - Tᴏ ᴘʀᴏᴍᴏᴛɪᴏɴ ʟɪᴋᴇ\n\n⤿ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴀᴅᴠᴀɴᴄᴇ ᴀɪ ᴛᴏᴏʟ\n\n⌬ 𝗗𝗠 [𝗢𝗪𝗡𝗘𝗥](t.me/rishu1286) 𝗙𝗢𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡**"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
