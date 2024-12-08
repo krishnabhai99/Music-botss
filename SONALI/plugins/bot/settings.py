@@ -135,6 +135,24 @@ async def gib_repo(client, CallbackQuery, _):
      ),
     )
 
+#sub plan hai #
+
+@app.on_callback_query(filters.regex("subplanh") & ~BANNED_USERS)
+@languageCB
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+        InputMediaVideo(
+            "https://envs.sh/Rke.mp4", 
+            caption= f"**⌬ ๏ Bᴇɴɪғɪᴛ ᴏғ sᴜʙsᴄʀɪᴘᴛɪᴏɴ\n\n⌬ Yᴏᴜ ᴄᴀɴ ғʀᴇᴇ ᴘʀᴏᴍᴏᴛɪᴏɴ ᴏғ ʀɪsʜᴜ-ᴍᴜsɪᴄ Aʟʟ\n\n\n𝗢𝗡𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗨𝗦𝗘𝗥 [𝗖𝗠𝗗]\n\n\n⤿ [/broadcast -user -pin -pinloud -nobot -assistant] - Tᴏ ᴘʀᴏᴍᴏᴛɪᴏɴ ʟɪᴋᴇ\n\n⤿ Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴀᴅᴠᴀɴᴄᴇ ᴀɪ ᴛᴏᴏʟ**"
+        ),
+        reply_markup=InlineKeyboardMarkup(
+            [
+
+[InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data=f"gibt_source")],
+             ],   
+     ),
+    )
+
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
