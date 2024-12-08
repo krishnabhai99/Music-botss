@@ -5,7 +5,7 @@ from time import time
 
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFont
 from pyrogram import enums, filters
-from pyrogram.types import ChatMemberUpdated
+from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
 
 from SONALI import app
 from SONALI.utils.database import get_assistant
@@ -126,8 +126,16 @@ async def greet_new_members(_, member: ChatMemberUpdated):
 
         # Add the modified condition here
         if member.new_chat_member and not member.old_chat_member:
-            welcome_text =  f"""**➪ 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ 💗**  \n**╔╦══••✠•❀❀•✠••══╦╗**\n         **[ 𝗥𝗔𝗗𝗛𝗘 𝗥𝗔𝗗𝗛𝗘 ]**\n**    ╚╩══••✠•❀❀•✠••══╩╝**\n**➥ ❛✧🪪𝚴ᴀᴍᴇ✧❜**  {user.mention} 💤 ❤\n**➥ ❛✧🪬𝐈ᴅ𝚴ᴜᴍʙᴇʀ✧❜** {user.id} \n**➥ ❛✧🪫𝐔sᴇʀ𝚴ᴀᴍᴇ✧❜**  @{user.username}  \n**➥ ❛✧🍁𝐌ᴇᴍʙᴇʀs✧❜**  {count}  **𝀈𝚻𝚮𝚨𝚴𝚱 𝐘𝚶𝐔🥀**"""
+            welcome_text =  f"""**➪ 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ 💗**  \n**╔╦══••✠•❀❀•✠••══╦╗**\n         **[ 𝗥𝗔𝗗𝗛𝗘 𝗥𝗔𝗗𝗛𝗘 ]**\n**    ╚╩══••✠•❀❀•✠••══╩╝**\n**➥ ❛✧🪪𝚴ᴀᴍᴇ✧❜**  {user.mention} 💤 ❤\n**➥ ❛✧🪬𝐈ᴅ𝚴ᴜᴍʙᴇʀ✧❜** {user.id} \n**➥ ❛✧🪫𝐔sᴇʀ𝚴ᴀᴍᴇ✧❜**  @{user.username}  \n**➥ ❛✧🍁𝐌ᴇᴍʙᴇʀs✧❜**  {count}  **𝀈𝚻𝚮𝚨𝚴𝚱 𝐘𝚶𝐔🥀**"""
+
+            # Adding inline buttons
+            buttons = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton("Support Group", url="https://t.me/Ur_support07")]
+                ]
+            )
+
             await asyncio.sleep(3)
-            await userbot.send_message(chat_id, text=welcome_text)
+            await userbot.send_message(chat_id, text=welcome_text, reply_markup=buttons)
     except Exception as e:
-        return
+        LOGGER.error(f"Error in greet_new_members: {e}")
