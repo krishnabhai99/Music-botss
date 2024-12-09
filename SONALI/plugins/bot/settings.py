@@ -168,8 +168,8 @@ async def gib_repo(client, CallbackQuery, _):
             [
 [InlineKeyboardButton(text="• ᴜᴘᴅᴀᴛᴇ •", url=f"t.me/ur_rishu_143"),
 InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"t.me/ur_support07")],
-[InlineKeyboardButton(text="• ᴀʟʟ ʙᴏᴛs •", url=f"t.me/vip_robotz"),
-InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"t.me/ur_support07")],
+[InlineKeyboardButton(text="• ᴀʟʟ ʙᴏᴛs •", url=f"t.me/vip_robotz/4"),
+InlineKeyboardButton(text="• ᴀʟʟ ᴀᴘɪ •", url=f"t.me/rishuapi")],
 [InlineKeyboardButton(text="⌬ ʙᴀᴄᴋ ⌬", callback_data=f"gibt_source")],
              ],   
      ),
