@@ -166,7 +166,7 @@ async def gib_repo(client, CallbackQuery, _):
         ),
         reply_markup=InlineKeyboardMarkup(
             [
-[InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID)],
+[InlineKeyboardButton(text="˹ ❍ᴡɴᴇꝛ ˼", user_id=config.OWNER_ID)],
 [InlineKeyboardButton(text="• ᴜᴘᴅᴀᴛᴇ •", url=f"t.me/ur_rishu_143"),
 InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", url=f"t.me/ur_support07")],
 [InlineKeyboardButton(text="• ᴀʟʟ ʙᴏᴛs •", url=f"t.me/vip_robotz/4"),
