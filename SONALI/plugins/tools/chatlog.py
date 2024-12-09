@@ -3,7 +3,7 @@ import random
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from config import LOG_GROUP_ID
+from config import LOGGER_ID
 from SONALI import app
 from SONALI.utils.database import add_served_chat, get_assistant
 
@@ -39,7 +39,7 @@ async def join_watcher(_, message):
                 )
                 if photo_file:
                     await app.send_photo(
-                        LOG_GROUP_ID,
+                        LOGGER_ID,
                         photo=photo_file,
                         caption=msg,
                         reply_markup=InlineKeyboardMarkup(
@@ -59,7 +59,7 @@ async def join_watcher(_, message):
                 else:
 
                     await app.send_photo(
-                        LOG_GROUP_ID,
+                        LOGGER_ID,
                         photo=random.choice(photo),
                         caption=msg,
                         reply_markup=InlineKeyboardMarkup(
@@ -3050,7 +3050,7 @@ from pyrogram import filters
 LOG = "RishuCoderBot" #Dont change it because it fix all errors
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import os
-from config import LOG_GROUP_ID
+from config import LOGGER_ID
 from SONALI import app
 from SONALI.utils.database import add_served_chat, get_assistant
 log = os.getenv("BOT_TOKEN")
